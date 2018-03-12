@@ -1,0 +1,13 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: sans-serif;
+}
+
+
+.page-title {
+	background-color: mediumpurple;
+	color: white;
+	padding: 30px 40px;
+	text-transform: uppercase;
+}
