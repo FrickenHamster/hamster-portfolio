@@ -1,13 +1,52 @@
 body {
-  margin: 0;
-  padding: 0;
-  font-family: sans-serif;
+	background-color: lightgray;
+	margin: 0;
+	padding: 0;
+	font-family: sans-serif;
 }
 
+.section-container {
+	padding: 2em;
+	padding-bottom: 3em;
+}
 
-.page-title {
+.section-title {
 	background-color: mediumpurple;
 	color: white;
 	padding: 30px 40px;
+	margin-bottom: 1em;
 	text-transform: uppercase;
 }
+
+.cover-picture {
+	background-image: url("/images/testcover.png");
+	height: 100vh;
+}
+
+.card {
+	border: solid 1px black;
+
+	min-height: 180px;
+
+	-moz-box-shadow: 8px 8px 10px #666;
+	-webkit-box-shadow: 8px 8px 10px #666;
+	box-shadow: 8px 8px 10px #666;
+	border-radius: 0
+}
+
+@media (max-width: 1240px) {
+	.container {
+		max-width: 1240px;
+	}
+}
+
+.btn-circle {
+	width: 50px;
+	height: 50px;
+	padding: 15px 0px;
+	border-radius: 25px;
+	text-align: center;
+	font-size: 12px;
+	line-height: 1.35;
+}
+

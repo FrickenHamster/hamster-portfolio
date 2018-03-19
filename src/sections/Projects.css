@@ -1,0 +1,22 @@
+
+.project-img-container {
+	height: 240px;
+	overflow: hidden;
+}
+
+.project-img {
+	width: 100%;
+}
+
+.desc-tab {
+	background-color: beige;
+	position: relative;
+	bottom: -250px;
+	height: 280px;
+	z-index: 1
+}
+
+.project-container {
+	height: 280px;
+	overflow: hidden;
+}
