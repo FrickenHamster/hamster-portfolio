@@ -94,6 +94,21 @@ ul ul a {
 	}
 }
 
+@media (max-height: 425px) {
+	#sidebar ul li a {
+		padding: 6px;
+		font-size: 1em;
+		display: block;
+	}
+
+	#sidebar .sidebar-header {
+		padding: 10px 20px;
+	}
+	#sidebar ul.components {
+		padding: 4px 0;
+	}
+}
+
 .topbar {
 	-moz-box-shadow: 0 4px 8px #666;
 	-webkit-box-shadow: 0 4px 8px #666;

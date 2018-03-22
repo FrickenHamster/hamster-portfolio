@@ -35,12 +35,12 @@ export default class ProjectsSection extends Component {
 						</ul>
 					</Project>
 					<Project
-						title={'Wire IO'}
-						description={'Online Multiplayer Wire Game'}
-						imgurl={'/images/projects/wire.png'}
+						title={'Cat IO'}
+						description={'Online Multiplayer Cat Game'}
+						imgurl={'/images/projects/cat.png'}
 					>
 						<ul>
-							<li>Browser multiplayer IO game</li>
+							<li>Browser multiplayer IO game based on Agar.io</li>
 							<li>Built using Typescript, Phaser.js, Node.js, Websockets and Bootstrap.</li>
 							<li>Mobile friendly and responsive</li>
 						</ul>
