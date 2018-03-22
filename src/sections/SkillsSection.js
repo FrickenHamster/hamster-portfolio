@@ -94,11 +94,11 @@ export default class SkillsSection extends Component {
 				<Card title='Games' className='pb-4'>
 					<div className='row p-4'>
 						<Skill
-							name='PhaserJS'
+							name='Phaser'
 							url='images/skills/phaser.png'
 						/>
 						<Skill
-							name='PixiJS'
+							name='Pixi'
 							url='images/skills/pixi.png'
 						/>
 						<Skill

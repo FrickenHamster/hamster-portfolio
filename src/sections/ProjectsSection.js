@@ -1,4 +1,4 @@
-import React, {Component} from 'react';
+import React, { Component } from 'react';
 import Section from './Section';
 import './Projects.css';
 //
@@ -13,38 +13,83 @@ export default class ProjectsSection extends Component {
 					<Project
 						title={'Vex 3 HTML'}
 						imgurl={'/images/projects/vex.png'}
+						link='https://goo.gl/tYqbFc'
 					>
 						<ul>
 							<li>HTML conversion for popular flash game Vex 3</li>
-							<li>. Built using Typescript and Phaser.js.</li>
+							<li>Built using Typescript and Phaser.js.</li>
 							<li>Levels extracted using Flash</li>
 							<li>Mobile friendly and responsive</li>
 						</ul>
-						
+
 					</Project>
 					<Project
 						title={'Fly or Die'}
 						description={'HTML game flying shoot em up'}
 						imgurl={'/images/projects/flyordie.png'}
 					>
-						<p>HTML conversion for popular flash game Vex 3. Built using Typescript and Phaser.js.</p>
-						<p>Levels extracted using Flash</p>
+						<ul>
+							<li>Browser physics based run and gun game</li>
+							<li>Built using Typescript, Phaser.js, and Box2d.</li>
+							<li>Mobile friendly and responsive</li>
+						</ul>
 					</Project>
 					<Project
 						title={'Wire IO'}
 						description={'Online Multiplayer Wire Game'}
 						imgurl={'/images/projects/wire.png'}
-					/>
+					>
+						<ul>
+							<li>Browser multiplayer IO game</li>
+							<li>Built using Typescript, Phaser.js, Node.js, Websockets and Bootstrap.</li>
+							<li>Mobile friendly and responsive</li>
+						</ul>
+					</Project>
+					<Project
+						title={'Wire IO'}
+						description={'Online Multiplayer Wire Game'}
+						imgurl={'/images/projects/wire.png'}
+					>
+						<ul>
+							<li>Browser multiplayer IO game</li>
+							<li>Built using Typescript, Phaser.js, Node.js, Websockets and Bootstrap.</li>
+							<li>Mobile friendly and responsive</li>
+						</ul>
+					</Project>
 					<Project
 						title={'Star Gear'}
 						description={'Online Multiplayer 4X'}
-						imgurl={'/images/projects/wire.png'}
-					/>
+						imgurl={'/images/projects/stargear.png'}
+					>
+						<ul>
+							<li>Browser multiplayer space 4X game</li>
+							<li>Built using Javascript, Phaser.js, Node.js, Websockets and Bootstrap.</li>
+							<li>Mobile friendly and responsive</li>
+						</ul>
+					</Project>
+					<Project
+						title={'Age Calculator Simple'}
+						description={'Android App'}
+						imgurl={'/images/projects/ageicon.png'}
+						link={'https://play.google.com/store/apps/details?id=com.hamsterhole.www.agecalculator&hl=en'}
+					>
+						<ul>
+							<li>Native Android App</li>
+							<li>Quickly calculates a persons age based on his birth date</li>
+							<li>Built for law enforcement officer</li>
+						</ul>
+					</Project>
 					<Project
 						title={'Easy Moves'}
 						description={'Android App'}
 						imgurl={'/images/projects/easymoves.png'}
-					/>
+						link={'https://play.google.com/store/apps/details?id=com.hamsterhole.www.easymoves&hl=en'}
+					>
+						<ul>
+							<li>Native Android App</li>
+							<li>Helps users catalog and organize during hectic moves</li>
+						</ul>
+					</Project>
 				</div>
 			</Section>);
 	}
@@ -82,8 +127,8 @@ class Project extends Component {
 			}}>
 				<div className='card'>
 					<div className='project-container'>
-						<div className='project-img-container'>
-							<img src={this.props.imgurl} className='project-img' alt={this.props.title}/>
+						<div className='project-img-container' style={{backgroundImage: `url(${this.props.imgurl})`, backgroundSize: 'cover'}}>
+							{/*<img src={this.props.imgurl} className='project-img' alt={this.props.title}/>*/}
 						</div>
 						<Transition
 							in={this.state.showDesc}
@@ -94,6 +139,11 @@ class Project extends Component {
 									 style={{...defaultStyle, ...transitionStyles[state]}}
 								><h3>{this.props.title}</h3>
 									{this.props.children}
+									<div className='project-bottom'>
+										{this.props.link &&
+										<a href={this.props.link}> <i className='fa fa-external-link-square'
+																	  style={{fontSize: 24}}/></a>}
+									</div>
 								</div>
 							)}
 						</Transition>

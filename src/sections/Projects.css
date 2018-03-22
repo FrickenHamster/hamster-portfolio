@@ -5,11 +5,13 @@
 }
 
 .project-img {
-	width: 100%;
+	min-width: 100%;
+	min-height: 100%;
 }
 
 .desc-tab {
-	background-color: beige;
+	background-color: mediumpurple;
+	color: white;
 	position: relative;
 	bottom: -250px;
 	height: 280px;
@@ -19,4 +21,10 @@
 .project-container {
 	height: 280px;
 	overflow: hidden;
+}
+
+.project-bottom {
+	bottom: 0;
+	padding: 1em;
+	position: absolute;
 }
