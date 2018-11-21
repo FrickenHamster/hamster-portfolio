@@ -7,7 +7,16 @@ export default class ExperienceSection extends Component {
 		return (
 			<Section title='Experience'>
 				<div className="container">
-					<Card title='Iconic Games Developer / AAY Freelancing (October 2016 - present)' className='mb-3'>
+					<Card title='CloudCompli Mobile Developer (October 2016 - present)' className='mb-3'>
+						<i>As a Mobile Developer, I pushed CloudCompli's app to release</i>
+						<ul>
+							<li>Lead developer working on the mobile app</li>
+							<li>Brought React Native app from unfinished state to release</li>
+							<li>Helped team members prepare a mobile release</li>
+							<li>Mentored others on best React and Javascript practices</li>
+						</ul>
+					</Card>
+					<Card title='Iconic Games Developer / AAY Freelancing (October 2016 - May 2018)' className='mb-3'>
 						<i>As a Game Developer, I worked on freelance projects and a large scale Zelda styled game. I later branched out into doing freelancing projects myself</i>
 						<ul>
 							<li>Delivered custom solutions to client</li>

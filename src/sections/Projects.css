@@ -28,3 +28,8 @@
 	padding: 1em;
 	position: absolute;
 }
+
+.project-icon {
+	margin-left: 2px;
+	margin-right: 2px;
+}

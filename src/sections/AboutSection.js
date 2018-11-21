@@ -9,7 +9,7 @@ export default class AboutSection extends Component {
 			title='About'>
 			<Card title="Hello, I'm Alex">
 				<p>
-					I'm a software engineer and a game developer located in Los Angeles.
+					I'm a software engineer and a game developer located in the Southern California area.
 				</p>
 				<p>
 					Though I graduated from University of California, Santa Barbara with a BS majoring in Computer Science in 2015, I have been developing games and software since I was in middle school. Some of my fondest memories as a child were hacking together games in GameMaker, and building programs in my graphing calculator. I have always wanted to create beautiful applications used by millions of people worldwide.

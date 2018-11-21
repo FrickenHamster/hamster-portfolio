@@ -1,8 +1,6 @@
 import React, { Component } from 'react';
 import Section from './Section';
 import './Projects.css';
-//
-// import { Transition } from 'react-transition-group'
 import Transition from 'react-transition-group/Transition';
 
 export default class ProjectsSection extends Component {
@@ -10,6 +8,18 @@ export default class ProjectsSection extends Component {
 		return (
 			<Section title={'Projects'}>
 				<div className='row'>
+					<Project
+						title='Kantan Desu'
+						imgurl='/images/projects/vex.png'
+						link='https://goo.gl/UB4RH5'
+						github='https://github.com/FrickenHamster/kantan-desu'
+					>
+						<ul>
+							<li>Anime backlog app</li>
+							<li>Built with React Native</li>
+							<li>Utilizing Kitsu API</li>
+						</ul>
+					</Project>
 					<Project
 						title={'Vex 3 HTML'}
 						imgurl={'/images/projects/vex.png'}
@@ -21,7 +31,6 @@ export default class ProjectsSection extends Component {
 							<li>Levels extracted using Flash</li>
 							<li>Mobile friendly and responsive</li>
 						</ul>
-
 					</Project>
 					<Project
 						title={'Fly or Die'}
@@ -137,11 +146,14 @@ class Project extends Component {
 							{(state) => (
 								<div className="desc-tab"
 									 style={{...defaultStyle, ...transitionStyles[state]}}
-								><h3>{this.props.title}</h3>
+								><h3 style={{marginLeft: 4}}>{this.props.title}</h3>
 									{this.props.children}
 									<div className='project-bottom'>
 										{this.props.link &&
-										<a href={this.props.link}> <i className='fa fa-external-link-square'
+										<a className='project-icon' href={this.props.link}> <i className='fa fa-external-link-square'
+																	  style={{fontSize: 24}}/></a>}
+										{this.props.github &&
+										<a className='project-icon' href={this.props.github}> <i className='fa fa-github'
 																	  style={{fontSize: 24}}/></a>}
 									</div>
 								</div>

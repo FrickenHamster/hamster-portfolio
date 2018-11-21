@@ -49,10 +49,10 @@ export default class SkillsSection extends Component {
 							name='Rails'
 							url='images/skills/rails.png'
 						/>
-						<Skill
+						{/*<Skill
 							name='ASP.NET'
 							url='images/skills/dotnet.png'
-						/>
+						/>*/}
 						<Skill
 							name='Websockets'
 							url='images/skills/websockets.png'
